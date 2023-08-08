@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Sabine Laurence Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="resources/sabine%20laurence%20logo.pdf"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Second Year Computer Science/Economics Major</h1>
+        <p>please fill in this... need to write stuff here!<br>and more stuff here
+        </p>
+        <a href="" class="hero-btn">Check Out My LinkedIn!</a>
+    </div>
+    </section>
+
+    <!------projects------>
+
+    <section class="projects">
+        <h1>Projects I've Worked On</h1>
+        <p>here are some really cool projects! </p>
+
+        <div class="row">
+            <div class="proj-col">
+                <h3>Project 1</h3>
+                <p>this is what i worked on hahahah</p>
+            </div>
+            <div class="proj-col">
+                <h3>Project 2</h3>
+                <p>this is what i worked on hahahah</p>
+            </div>
+            <div class="proj-col">
+                <h3>Project 3</h3>
+                <p>this is what i worked on hahahah</p>
+            </div>
+        </div>
+    </section>
+
+    <!------about footer------>
+    <section class="footer">
+        <h4>About Me!</h4>
+        <p>lots to say</p>
+    </section>
+
+
+<script>
+    var navLinks = document.getElementById(navLinks);
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+
+</html>
