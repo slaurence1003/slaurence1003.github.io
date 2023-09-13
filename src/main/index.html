@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Sabine Laurence Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="resources/sabine%20laurence%20logo.pdf"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+ <!--                   <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li> -->
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Hi! I'm Sabine Laurence</h1>
+        <p>sabinealaurence@gmail.com | (408) 409-3664</p>
+    </div>
+    </section>
+
+    <section class="about-me">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>Second Year Computer Science/Economics Student</h1>
+                <p>Hello, I'm Sabine Laurence, a passionate second-year student pursuing a combined major in Computer Science
+                    and Economics at Northeastern University. I believe in the power of merging technology and economics to
+                    drive innovation and create meaningful solutions for real-world challenges.</p>
+                <p>My academic journey has been an exciting one, marked by unique experiences that have shaped my perspective.
+                    From studying abroad in London during my first semester of college to immersing myself in the world of
+                    Computer Science despite having no prior experience, I've embraced every opportunity to learn and grow.</p>
+                <p>I take pride in my ability to excel in my classes and acquire new skills in Computer Science, even without
+                    a previous background. Alongside my academic pursuits, my "people" experience is a defining aspect of who I
+                    am. Working in customer service throughout high school and participating in speech and debate have honed my
+                    communication and interpersonal skills, giving me a well-rounded approach to problem-solving and
+                    collaboration.</p>
+                <p>As I continue my academic journey, I'm excited to leverage my unique blend of knowledge and experiences to
+                    contribute positively to the worlds of technology and economics. Join me as I explore the intersection of
+                    these fields and strive to make a meaningful impact.</p>
+                <a href="https://www.linkedin.com/in/sabine-laurence-30a558195/" class="btn">Check Out My LinkedIn!</a>
+                <a href="https://github.com/slaurence1003" class="btn">Check Out My GitHub!</a>
+            </div>
+            <div class="about-col">
+                <img src="resources/headshot.png">
+            </div>
+        </div>
+    </section>
+
+<script>
+    var navLinks = document.getElementById(navLinks);
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+
+</html>
