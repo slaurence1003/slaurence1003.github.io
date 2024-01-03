@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 .header{
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(src/main/resources/lon.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(src/main/resources/sf-background.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -70,21 +70,24 @@ nav img{
 nav .fa{
     display: none;
 }
-.about-col{
-    flex-basis: 40%;
-    padding: 30px 2px;
+.about-col {
+    width: 60%;
     margin-right: 5px;
+    box-sizing: border-box;
 }
+
 .about-col img {
     width: 100%;
 }
 
 .about-col h1 {
     padding-top: 0;
+    width: 100%;
 }
 
 .about-col p {
     padding: 15px 0 25px;
+    width: 100%;
 }
 
 @media(max-width: 700px){
@@ -125,12 +128,12 @@ nav .fa{
      padding-top: 100px;
  }
  h1{
-     color: #344e41;
+     color: #223338;
      font-size: 36px;
      font-weight: 600;
  }
  p{
-     color: #344e41;
+     color: #223338;
      font-size: 14px;
      font-weight: 300;
      line-height: 22px;
@@ -141,20 +144,44 @@ nav .fa{
      display: flex;
      justify-content: space-between;
  }
+ .vid-container video{
+     margin: 0 auto;
+     display: block;
+ }
  .proj-col{
      flex-basis: 31%;
-     background: #a3b18a;
+     background: #94b0b7;
      border-radius: 10px;
      margin-bottom: 5%;
      padding: 20px 12px;
      box-sizing: border-box;
      transition: 0.5s;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
  }
  h3 {
      text-align: center;
      font-weight: 600;
      margin: 10px 0;
  }
+.pbtn{
+    display: inline-block;
+    margin: 15px auto;
+    text-decoration: none;
+    color: #344e41;
+    border: 1px solid #223338;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.pbtn:hover{
+    border: 1px solid #4a707a;
+    background: #4a707a;
+    transition: 1s;
+}
  .proj-col:hover{
      box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
  }
@@ -253,7 +280,6 @@ nav .fa{
     margin-bottom: 15px;
     text-align: left;
 }
-
 
 .btn{
     display: inline-block;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>Sabine Laurence Personal Website</title>
@@ -15,9 +15,9 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="courses.html">COURSES</a></li>
-                <!--                   <li><a href="about.html">ABOUT</a></li>
-                                   <li><a href="projects.html">PROJECTS</a></li>
-                                   <li><a href="experience.html">EXPERIENCE</a></li> -->
+                <!--                   <li><a href="about.html">ABOUT</a></li> -->
+                <li><a href="projects.html">PROJECTS</a></li>
+                <!--  <li><a href="experience.html">EXPERIENCE</a></li> -->
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -30,21 +30,32 @@
 
 <section class="projects">
     <h1>Projects I've Worked On</h1>
-    <p>here are some really cool projects! </p>
+    <p> </p>
 
-    <div class="row">
+    <div class="col">
         <div class="proj-col">
             <h3>Maze Game</h3>
-            <p>this is what i worked on hahahah</p>
+            <p>In Foundations of Computer Science 2, our final project was to work with a partner to develop a self generating and solving maze. The user would be able to input three variables to the command line: integers to represent the height and width of the maze, as well as a boolean which determined if the maze would be solved breath-first (true), or width-first (false). From there, when the program is run, an auto-generated maze would appear. You could then watch in real time, through visual animation, as the program searches to find a solution to the maze. </p>
+                <p>In order to implement the self-generating maze, our project utilizes a modified version of Kruskal's algorithm. We represent the maze as a grid of nodes, each connected to its neighbors (up, down, left, right) by edges. The program starts by initializing all nodes and edges, assigning random weights to the edges. These edges are then sorted based on their weights, in ascending order. The algorithm then iterates through the sorted edges, adding each edge to the maze if it connects two disjoint sets of nodes. This process continues until a spanning tree is formed.</p>
+                <p>For the maze solving part, the program employs either breadth-first or depth-first search, based on the user's choice. Using a specialized collection (queue for breath or stack for depth) to manage the traversal, the algorithm explores the maze from the starting point to find a path to the destination. During this exploration, the program visually highlights the nodes and edges involved in the current path, providing a real-time animation of the solving process. The final result is an interactive Java application that not only generates intriguing mazes but also visually demonstrates how it navigates through the maze to find a solution.</p>
+            <div class="vid-container">
+            <video width="640" height="360" controls>
+                <source src="src/main/resources/maze_game_demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+                </div>
+            <a href="https://github.com/slaurence1003/MazeGame" class="pbtn">Check out the code!</a>
         </div>
+        <!----
         <div class="proj-col">
-            <h3>Bullet Journal</h3>
-            <p>this is what i worked on hahahah</p>
+            <h3>Jetsetter Database</h3>
+            <p></p>
         </div>
         <div class="proj-col">
             <h3>Autonomous Battleship</h3>
             <p>this is what i worked on hahahah</p>
         </div>
+        --->
     </div>
 </section>
 
